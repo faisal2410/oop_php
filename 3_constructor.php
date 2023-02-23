@@ -12,16 +12,19 @@ Inside the constructor method, we set the value of the object's my_property prop
 In this example, we create a new object of the MyClass class and pass in the string "Hello World!" as the argument for the constructor. The my_property property of the object is then set to "Hello World!". Finally, we output the value of the my_property property using the echo statement.
 */ 
 
-class MyClass {
-    public $my_property;
+// class MyClass {
+//     public $my_property;
+//     public $x;    
 
-    public function __construct( $value ) {
-        $this->my_property = $value;
-    }
-}
+//     public function __construct( $value,$var ) {
+//         $this->my_property = $value;
+//         $this->x=$var;
+//     }
+// }
 
-$obj = new MyClass( "Hello World!" );
-echo $obj->my_property; // Outputs "Hello World!"
+// $obj = new MyClass("Ostad",2);
+// echo $obj->my_property; // Outputs "Hello World!"
+// echo $obj->x;
 
 
 
@@ -51,5 +54,6 @@ $person1->introduce(); // Outputs "Hello, my name is John and I am 25 years old.
 
 $person2 = new Person( "Sarah", 30 );
 $person2->introduce(); // Outputs "Hello, my name is Sarah and I am 30 years old."
+// $person3=new Person("Rabbil Hassan",31);
 
 

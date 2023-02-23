@@ -22,8 +22,10 @@ class Person {
     // Method of the Person class
     public function sayHello() {
         echo "Hello, my name is " . $this->name . " and I am " . $this->age . " years old.";
+        echo "Salam";
     }
 }
+
 
 // Create an object of the Person class
 $person = new Person();

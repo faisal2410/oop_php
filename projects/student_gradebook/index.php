@@ -5,9 +5,9 @@ require_once 'course.php';
 require_once 'student.php';
 
 // Create some students
-$student1 = new Student( 's001', 'Alice' );
-$student2 = new Student( 's002', 'Bob' );
-$student3 = new Student( 's003', 'Charlie' );
+$student1 = new Student( 's001', 'Faisal' );
+$student2 = new Student( 's002', 'Talha' );
+$student3 = new Student( 's003', 'Afnan' );
 
 // Create a course and add the students
 $course1 = new Course( 'c001', 'Math' );
@@ -23,11 +23,13 @@ $course1->addGrade( 's003', 85 );
 // Create another course and add the students
 $course2 = new Course( 'c002', 'Science' );
 $course2->addStudent( $student1 );
+$course2->addStudent( $student2 );
 $course2->addStudent( $student3 );
 
 // Add grades for the students
 $course2->addGrade( 's001', 95 );
-$course2->addGrade( 's003', 90 );
+$course2->addGrade( 's002', 90 );
+$course2->addGrade( 's003', 80 );
 
 // Create a gradebook and add the courses
 $gradebook = new Gradebook();

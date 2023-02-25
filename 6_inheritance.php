@@ -54,11 +54,11 @@ An inherited class is defined by using the extends keyword.
 // }
 
 // $myCar = new Toyota('Toyota', 'Blue');
-// print_r($myCar);
+// // print_r($myCar);
 
 // $myCar->set_engine("TY897fr523t");
 
-// print_r($myCar);
+// // print_r($myCar);
 // $myCar->set_color('Green');
 // $myCar->set_name('BMW');
 // $myCar->get_full_specs($myCar->get_name(), $myCar->get_color());
@@ -120,7 +120,7 @@ var_dump($dog);
 
 
 
-// Example 3 :
+// // Example 3 :
 
 // Base class
 class Employee {

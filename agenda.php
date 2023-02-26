@@ -24,3 +24,12 @@
  * 3. Simple Login Project
  * 4. Rgb color conversion project
  * */  
+
+/**
+ * 26.02.2023
+ * 1.Interfaces
+ * 2. Object cloning
+ * 3.Object to String
+ * 4.Comparing Objects
+ * 
+ * */  

@@ -24,53 +24,84 @@ Classes can implement an interface while inheriting from another class at the sa
 // Interface defination
 
 
+// Example 1
 
-interface Cars {
-    public function intro();
+// interface Cars {
+//     public function intro();
+// }
+
+
+// // Class definations
+// class BMW implements Cars{
+//     public $secret_engine;
+
+//     public function __construct($engine)
+//     {
+//         $this->secret_engine = $engine;
+//     }
+
+//     public function intro()
+//     {
+//         echo "This is BMW car with engine: $this->secret_engine";   
+//     }
+// }
+
+// class Toyota implements Cars{
+//     public $secret_engine;
+
+//     public function __construct($engine)
+//     {
+//         $this->secret_engine = $engine;
+//     }
+
+//     public function intro()
+//     {
+//         echo "This is Toyota car with engine: $this->secret_engine";   
+//     }
+// }
+
+
+// //Create Objects
+// $bmw = new BMW("BM7345iu&6");
+// $toyota = new Toyota("TY89345au&6");
+
+// print_r($bmw);
+// echo PHP_EOL;
+// print_r($toyota);
+// echo PHP_EOL;
+
+
+// $bmw->intro();
+// echo PHP_EOL;
+// $toyota->intro();
+
+
+
+// Example 2
+
+interface Animal {
+    public function makeSound();
 }
 
-
-// Class definations
-class BMW implements Cars{
-    public $secret_engine;
-
-    public function __construct($engine)
-    {
-        $this->secret_engine = $engine;
-    }
-
-    public function intro()
-    {
-        echo "This is BMW car with engine: $this->secret_engine";   
+class Dog implements Animal {
+    public function makeSound() {
+        echo "Woof!\n";
     }
 }
 
-class Toyota implements Cars{
-    public $secret_engine;
-
-    public function __construct($engine)
-    {
-        $this->secret_engine = $engine;
-    }
-
-    public function intro()
-    {
-        echo "This is Toyota car with engine: $this->secret_engine";   
+class Cat implements Animal {
+    public function makeSound() {
+        echo "Meow!\n";
     }
 }
 
+// Create an array of animals
+$animals = [
+    new Dog(),
+    new Cat(),
+];
 
-//Create Objects
-$bmw = new BMW("BM7345iu&6");
-$toyota = new Toyota("TY89345au&6");
-
-print_r($bmw);
-echo "<br>";
-print_r($toyota);
-echo "<br>";
-
-
-$bmw->intro();
-echo "<br>";
-$toyota->intro();
-?>
+// Loop through the animals and make them all make a sound
+foreach ( $animals as $animal ) {
+    $animal->makeSound();
+}

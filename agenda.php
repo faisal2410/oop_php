@@ -33,3 +33,10 @@
  * 4.Comparing Objects
  * 
  * */  
+
+/**
+ * 27.02.2023
+ * 1.Namespace
+ * 2.Trait
+ * 
+ * */  

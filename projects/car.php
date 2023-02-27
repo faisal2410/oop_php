@@ -67,4 +67,4 @@ $car->set_model( "Civic" );
 // Display the updated car information
 $car->display_info();
 
-?>
+

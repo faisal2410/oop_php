@@ -1,37 +1,24 @@
 <?php 
-/*
-Namespaces are qualifiers that solve two different problems:
+// In PHP, a namespace is a way to encapsulate classes, functions, constants, and other names to avoid naming conflicts. Namespaces allow developers to group related code together and avoid naming collisions when using code from different sources.
 
-They allow for better organization by grouping classes that work together to perform a task
-They allow the same name to be used for more than one class
-*/
+namespace MyNamespace;
 
-
-namespace Html;
-
-
-class Table {
-  public $title = "";
-  public $numRows = 0;
-  public function message() {
-    echo "<p>Table '{$this->title}' has {$this->numRows} rows.</p>";
-  }
+class MyClass {
+    public function hello() {
+        echo 'Hello from MyClass!';
+    }
 }
-$table = new Table();
-$table->title = "My table";
-$table->numRows = 5;
-?>
 
-$newTable = new Html\Table()
-$row = new Html\Row()
+function myFunction() {
+    echo 'Hello from myFunction!';
+}
 
-<!DOCTYPE html>
-<html>
-<body>
 
-<?php
-$table->message();
-?>
+// use function MyNamespace\myFunction;
+// use MyNamespace\MyClass;
 
-</body>
-</html>
+// $obj = new MyClass();
+// $obj->hello(); // Output: Hello from MyClass!
+
+// myFunction(); // Output: Hello from myFunction!
+

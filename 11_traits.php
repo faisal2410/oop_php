@@ -46,14 +46,15 @@ class Car{
 }
 
 
+
+
 $myCar = new Car("Toyota");
 print_r($myCar);
-echo "<br>";
+echo PHP_EOL;
 
 $myCar->showMessage();
-echo "<br>";
+echo PHP_EOL;
 $myCar->showInfo();
-echo "<br>";
+echo PHP_EOL;
 $myCar->declearInfo();
 
-?>

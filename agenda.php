@@ -40,3 +40,12 @@
  * 2.Trait
  * 
  * */  
+
+/**
+ * 28.02.2023
+ * 1. Magic Methods
+ * 2. final keyword
+ * 3.Creating constants in classes
+ * 4.Example project using Magic Methods, final keyword and constant
+ * 
+ * */  

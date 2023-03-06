@@ -4,7 +4,7 @@
 
 // Here are some examples of using :: in PHP:
 
-//1. Accessing a static property:
+// 1. Accessing a static property:
 
 // class MyClass {
 //   public static $my_property = "Hello World!";
@@ -14,11 +14,13 @@
 
 //2. Calling a static method:
 
+
 // class MyClass {
 //   public static function my_method() {
 //     echo "Hello World!";
 //   }
 // }
+
 
 // MyClass::my_method(); // Outputs "Hello World!"
 

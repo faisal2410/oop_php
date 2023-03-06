@@ -1,0 +1,154 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Job list styles */
+.job {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.job h2 {
+  margin-top: 0;
+}
+
+.job p {
+  margin-bottom: 10px;
+}
+
+.job .apply {
+  margin-top: 10px;
+}
+
+.job .apply button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.job .apply button:hover {
+  background-color: #555;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+
+/* Style for job details */
+.job-title {
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.job-location {
+font-size: 24px;
+margin-bottom: 30px;
+}
+
+.job-description,
+.job-requirements {
+font-size: 18px;
+margin-bottom: 20px;
+}
+
+/* Style for apply form */
+.apply-title {
+font-size: 24px;
+font-weight: bold;
+margin-top: 50px;
+margin-bottom: 30px;
+}
+
+.apply-form {
+display: flex;
+flex-direction: column;
+width: 50%;
+margin: auto;
+}
+
+.apply-form label {
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.apply-form input,
+.apply-form button {
+padding: 10px;
+font-size: 16px;
+margin-bottom: 20px;
+}
+
+.apply-button {
+background-color: #007bff;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+.apply-button:hover {
+background-color: #0056b3;
+}

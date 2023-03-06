@@ -35,6 +35,8 @@ trait madeInUAE{
 }
 
 
+
+
 class Car{
     use madeInChina, madeInUSA, madeInUAE;
     public $name;
@@ -57,4 +59,54 @@ echo PHP_EOL;
 $myCar->showInfo();
 echo PHP_EOL;
 $myCar->declearInfo();
+
+
+// Example 2
+
+// Traits can be useful for adding functionality to a class without having to inherit from another class. For example, you might use a trait to add logging functionality to multiple classes:
+
+trait LogsActivity {
+    public function logActivity( $message ) {
+        // Code to log activity here
+    }
+}
+
+class User {
+    use LogsActivity;
+
+    public function save() {
+        // Code to save user here
+        $this->logActivity( 'User saved' );
+    }
+}
+
+class Post {
+    use LogsActivity;
+
+    public function save() {
+        // Code to save post here
+        $this->logActivity( 'Post saved' );
+    }
+}
+
+
+// Example 3
+
+// Traits can also be used to override methods in a class. For example, you might use a trait to add caching functionality to a class:
+
+trait CachesData {
+    public function getData() {
+        // Code to get data from cache
+    }
+}
+
+class MyClass {
+    use CachesData;
+
+    public function getData() {
+        // Code to get data from database
+    }
+}
+
+
 

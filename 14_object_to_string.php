@@ -18,13 +18,14 @@ class Person {
     $this->age = $age;
   }
 
-//   public function __toString() {
-//     return "Name: {$this->name}, Age: {$this->age}\n";
-//   }
+  public function __toString() {
+    return "Name: {$this->name}, Age: {$this->age}\n";
+  }
 }
 
 // Create a new Person object
 $person = new Person('John', 30);
+// print_r($person);
 
 // Convert the Person object to a string
 // $str = strval($person);

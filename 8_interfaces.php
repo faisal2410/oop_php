@@ -79,29 +79,29 @@ Classes can implement an interface while inheriting from another class at the sa
 
 // Example 2
 
-interface Animal {
-    public function makeSound();
-}
+// interface Animal {
+//     public function makeSound();
+// }
 
-class Dog implements Animal {
-    public function makeSound() {
-        echo "Woof!\n";
-    }
-}
+// class Dog implements Animal {
+//     public function makeSound() {
+//         echo "Woof!\n";
+//     }
+// }
 
-class Cat implements Animal {
-    public function makeSound() {
-        echo "Meow!\n";
-    }
-}
+// class Cat implements Animal {
+//     public function makeSound() {
+//         echo "Meow!\n";
+//     }
+// }
 
-// Create an array of animals
-$animals = [
-    new Dog(),
-    new Cat(),
-];
+// // Create an array of animals
+// $animals = [
+//     new Dog(),
+//     new Cat(),
+// ];
 
-// Loop through the animals and make them all make a sound
-foreach ( $animals as $animal ) {
-    $animal->makeSound();
-}
+// // Loop through the animals and make them all make a sound
+// foreach ( $animals as $animal ) {
+//     $animal->makeSound();
+// }
